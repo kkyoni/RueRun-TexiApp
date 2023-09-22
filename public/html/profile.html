@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Leedia - Profile</title>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- Morris Charts CSS -->
+    <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- vector map CSS -->
+	<link href="vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- Calendar CSS -->
+	<link href="vendors/bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet" type="text/css"/>
+		
+	<!-- Data table CSS -->
+	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- Custom CSS -->
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--Preloader-->
+	<div class="preloader-it">
+		<div class="la-anim-1"></div>
+	</div>
+	<!--/Preloader-->
+    <div class="wrapper theme-1-active box-layout pimary-color-red slide-nav-toggle">
+		<!-- Top Menu Items -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="mobile-only-brand pull-left">
+				<div class="nav-header pull-left">
+					<div class="logo-wrap">
+						<a href="index.html">
+							<img class="brand-img" src="dist/img/logo.png" alt="brand"/>
+						</a>
+					</div>
+				</div>	
+				<a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
+				
+			</div>
+		</nav>
+		<!-- /Top Menu Items -->
+		
+		<!-- Left Sidebar Menu -->
+		<div class="fixed-sidebar-left">
+			<ul class="nav navbar-nav side-nav nicescroll-bar">
+				<li class="navigation-header">
+					<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown" aria-expanded="true">
+						<div class="user_detail">
+							<div class="user_profile">
+								<img src="dist/img/user1.png" alt="user_auth" class="user-auth-img user-profile img-circle">
+							</div>
+							<div class="user_name_dtl">
+								<div class="wlc_status">Welcome,</div>
+								<div class="user_name">John Doe</div>
+							</div>
+						</div>
+					</a>
+				</li>
+		
+				<li>
+					<a href="customer-list.html">
+						<div class="pull-left"><i class="zmdi zmdi-apps mr-20"></i><span class="right-nav-text">Customer List</span></div><div class="clearfix"></div></a>				
+				</li>
+
+				<li>
+					<a class="active" href="profile.html">
+						<div class="pull-left"><i class="fa fa-user mr-20"></i><span class="right-nav-text">Update Profile</span></div><div class="clearfix"></div></a>				
+				</li>
+
+				<li>
+					<a href="history.html">
+						<div class="pull-left"><i class="fa fa-history mr-20"></i><span class="right-nav-text">History</span></div><div class="clearfix"></div></a>				
+				</li>
+
+				<li>
+					<a href="index.html">
+						<div class="pull-left"><i class="fa fa-power-off mr-20"></i><span class="right-nav-text">Logout</span></div><div class="clearfix"></div></a>				
+				</li>
+			</ul>
+		</div>
+		<!-- /Left Sidebar Menu -->
+			
+		
+
+        <!-- Main Content -->
+		<div class="page-wrapper">
+            <div class="container-fluid pt-25">
+					
+				<!-- Row -->
+				<div class="row">
+					<div class="col-lg-3 col-xs-12">
+						<div class="panel panel-default card-view  pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="profile-box">	
+										<div class="profile-info text-center">
+											<div class="profile-img-wrap">
+												<img class="inline-block mb-10" src="dist/img/mock1.jpg" alt="user"/>
+												<div class="fileupload btn btn-default">
+													<span class="btn-text">edit</span>
+													<input class="upload" type="file">
+												</div>
+											</div>	
+											<h5 class="block mt-10 mb-5 weight-500 capitalize-font txt-danger">Madalyn Rascon</h5>
+											<h6 class="block capitalize-font pb-20">Developer Geek</h6>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-xs-12">
+						<div class="panel panel-default card-view pa-0">							
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="panel-heading">
+										<div class="row">
+											<div class="col-lg-6 col-sm-4">
+												<div class="page-title mt-10">
+													<h6 class="panel-title txt-dark weight-600">Personal Details</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12">
+										<div class="form-wrap">
+											<form action="#">
+												<div class="form-body overflow-hide">
+													<div class="form-group">
+														<label class="control-label mb-10" for="exampleInputuname_1">Admin Name</label>
+														<div class="input-group">
+															<div class="input-group-addon"><i class="icon-user"></i></div>
+															<input type="text" class="form-control" id="exampleInputuname_1" placeholder="willard bryant">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="control-label mb-10" for="exampleInputEmail_1">Email address</label>
+														<div class="input-group">
+															<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
+															<input type="email" class="form-control" id="exampleInputEmail_1" placeholder="xyz@gmail.com">
+														</div>
+													</div>												
+												</div>		
+											</form>
+										</div>
+									</div>
+
+									<div class="panel-heading">
+										<div class="row">
+											<div class="col-lg-6 col-sm-4">
+												<div class="page-title mt-10">
+													<h6 class="panel-title txt-dark weight-600">Change Password</h6>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-12 col-xs-12">
+										<div class="form-wrap">
+											<form action="#">
+												<div class="form-body overflow-hide">
+													<div class="form-group">
+														<label class="control-label mb-10" for="exampleInputpwd_1">Current Password</label>
+														<div class="input-group">
+															<div class="input-group-addon"><i class="icon-lock"></i></div>
+															<input type="password" class="form-control" id="exampleInputpwd_1" placeholder="Enter pwd" value="password">
+														</div>
+													</div>	
+													<div class="form-group">
+														<label class="control-label mb-10" for="exampleInputpwd_1">New Password</label>
+														<div class="input-group">
+															<div class="input-group-addon"><i class="icon-lock"></i></div>
+															<input type="password" class="form-control" id="exampleInputpwd_1" placeholder="Enter pwd" value="password">
+														</div>
+													</div>	
+													<div class="form-group">
+														<label class="control-label mb-10" for="exampleInputpwd_1">Confirm Password</label>
+														<div class="input-group">
+															<div class="input-group-addon"><i class="icon-lock"></i></div>
+															<input type="password" class="form-control" id="exampleInputpwd_1" placeholder="Enter pwd" value="password">
+														</div>
+													</div>													
+												</div>
+												<div class="form-actions mt-10">			
+													<button type="submit" class="btn btn-primary mr-10 mb-30">Save</button>
+													<button type="submit" class="btn btn-default mr-10 mb-30">Cancel</button>
+												</div>				
+											</form>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						
+							
+					</div>
+				</div>
+				<!-- /Row -->
+			
+			</div>
+			<!-- Footer -->
+			<footer class="footer container-fluid pl-30 pr-30">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>2019 &copy; Leedia. Powered by Ais Technolabs Pvt. Ltd.</p>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+			
+		</div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /#wrapper -->
+	
+	<!-- JavaScript -->
+	
+    <!-- jQuery -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+	<!-- Vector Maps JavaScript -->
+    <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="dist/js/vectormap-data.js"></script>
+	
+	<!-- Calender JavaScripts -->
+	<script src="vendors/bower_components/moment/min/moment.min.js"></script>
+	<script src="vendors/jquery-ui.min.js"></script>
+	<script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+	<script src="dist/js/fullcalendar-data.js"></script>
+	
+	<!-- Counter Animation JavaScript -->
+	<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+	
+	<!-- Data table JavaScript -->
+	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+	
+	<!-- Slimscroll JavaScript -->
+	<script src="dist/js/jquery.slimscroll.js"></script>
+	
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+	
+	<!-- Sparkline JavaScript -->
+	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+	
+	<script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+	<script src="dist/js/skills-counter-data.js"></script>
+	
+	<!-- Morris Charts JavaScript -->
+    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+    <script src="dist/js/morris-data.js"></script>
+	
+	<!-- Owl JavaScript -->
+	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+	
+	<!-- Switchery JavaScript -->
+	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+	
+	<!-- Data table JavaScript -->
+	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+		
+	<!-- Gallery JavaScript -->
+	<script src="dist/js/isotope.js"></script>
+	<script src="dist/js/lightgallery-all.js"></script>
+	<script src="dist/js/froogaloop2.min.js"></script>
+	<script src="dist/js/gallery-data.js"></script>
+	
+	<!-- Spectragram JavaScript -->
+	<script src="dist/js/spectragram.min.js"></script>
+	
+	<!-- Init JavaScript -->
+	<script src="dist/js/init.js"></script>
+	<script src="dist/js/widgets-data.js"></script>
+
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			if($(window).width() <= 767) {
+		        $('.theme-1-active').removeClass('slide-nav-toggle');
+		    }else{
+		        $('.theme-1-active').addClass('slide-nav-toggle');
+		    }
+		});
+		$(window).resize(function () {
+			if($(window).width() <= 767) {
+		        $('.theme-1-active').removeClass('slide-nav-toggle');
+		    }else{
+		        $('.theme-1-active').addClass('slide-nav-toggle');
+		    }
+		});
+
+	</script>
+
+</body>
+
+</html>
